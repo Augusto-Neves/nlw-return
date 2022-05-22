@@ -9,7 +9,9 @@ import { Option } from "../Option";
 export function Options() {
   return (
     <View style={styles.container}>
-        <Text></Text>
+        <Text style={styles.title}>
+          Deixe seu feedback
+        </Text>
       <View style={styles.options}>
         {Object.entries(feedbackTypes).map(([key, value]) => (
           <Option key={key} title={value.title} image={value.image} />
